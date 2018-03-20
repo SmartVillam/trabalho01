@@ -1,4 +1,4 @@
-# TRABALHO 01:  Projeto Megatron
+# TRABALHO 01:  Projeto Smart Villam
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 # Sumário
@@ -10,12 +10,10 @@ Rafael:xemrafinha0800@gmail.com<br>
 ...
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados "Megatron"
+Este documento contém a especificação do projeto do banco de dados "Smart Villam"
 <br>e motivação da escolha realizada. <br>
   
-> O projeto "Megatron" tem o como sua finalidade, aprimorar e reduzir o custo de produções agrícolas em pequena e larga escala. Sabendo-se que grande parte do consumo da água do nosso planeta é oriundo das produções agrícolas e que diversas áreas do Brasil vêm passando por intensos períodos de seca, tivemos a ideia de desenvolver um sistema que consiga diminuir o desperdício nas plantações. O Sistema Megatron tem como objetivo diminuir o consumo de água nas fazendas 
-
-A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+> O projeto "Smart Villam" tem o como sua finalidade, aprimorar e reduzir o custo de produções agrícolas em pequena e larga escala. Sabendo-se que grande parte do consumo da água do nosso planeta é oriundo das produções agrícolas e que diversas áreas do Brasil vêm passando por intensos períodos de seca, tivemos a ideia de desenvolver um sistema que consiga diminuir o desperdício nas plantações. O Projeto "Smart Villam" tem como objetivo diminuir o consumo de água nas fazendas através de um sistema inteligente que trabalha com o clima e com a umidade.
  
 
 ### 3.MINI-MUNDO Novo<br>
