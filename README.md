@@ -13,7 +13,7 @@ Rafael:xemrafinha0800@gmail.com<br>
 Este documento contém a especificação do projeto do banco de dados "Smart Villam"
 <br>e motivação da escolha realizada. <br>
   
-> O projeto "Smart Villam" tem o como sua finalidade, aprimorar e reduzir o custo de produções agrícolas em pequena e larga escala. Sabendo-se que grande parte do consumo da água do nosso planeta é oriundo das produções agrícolas e que diversas áreas do Brasil vêm passando por intensos períodos de seca, tivemos a ideia de desenvolver um sistema que consiga diminuir o desperdício nas plantações. O Projeto "Smart Villam" tem como objetivo diminuir o consumo de água nas fazendas através de um sistema inteligente que trabalha com o clima e com a umidade.
+> O projeto "Smart Villam" tem o como sua finalidade, aprimorar e reduzir o custo de produções agrícolas em pequena e larga escala. Sabendo-se que grande parte do consumo da água do nosso planeta é oriundo das produções agrícolas e que diversas áreas do Brasil vêm passando por intensos períodos de seca, tivemos a ideia de desenvolver um sistema que consiga diminuir o desperdício nas plantações. O Projeto "Smart Villam" tem como objetivo aumentar a produtividade e diminuir o consumo de água nas fazendas através de um sistema inteligente que trabalha com o clima e com a umidade.
  
 
 ### 3.MINI-MUNDO Novo<br>
