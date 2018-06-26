@@ -59,14 +59,17 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         * Para nosso prótótipo limitaremos o modelo conceitual nas 5 principais entidades do escopo
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
-        
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Conceitual_SmartVillam.png?raw=true "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
+    
     C) QUALIDADE 
         Garantir que a semântica dos atributos seja clara no esquema
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas
+        e tuplas falsas    
+        
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Conceitual_SmartVillam.png?raw=true "Modelo Conceitual")
+    
+   
     
         
     
@@ -94,11 +97,16 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         a) inclusão do modelo lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
+        
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/SmartVillam_L%C3%B3gico_1.png?raw=true "Modelo Lógico")
+
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
         (criação de tabelas, alterações, etc..)  
-          
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/SmartVillam_Modelo_Fisico.txt?raw=true "Modelo Físico")
+
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
