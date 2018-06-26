@@ -42,11 +42,16 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     c) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
     
     
-#### 4.2 QUAIS PERGUNTAS POD
-EM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
+#### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
+        Relatórios referentes a área de plantação no geral. Sobre o solo da área e sobre a cultura nela plantada.
     b) Crie uma lista com os 10 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
+        Relatório sobre a necessidade de água do solo;
+        Relatório contendo 
+        Relatório sobre a diferença entre os nutrientes necessários para a cultura e os nutrientes que o solo possui;
+        
+        
+        
 >## Marco de Entrega 01 em: (24/03/2018)<br>
 
 ### 5.MODELO CONCEITUAL<br>
@@ -92,7 +97,8 @@ EM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)          
+        (criação de tabelas, alterações, etc..)  
+          
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
