@@ -1,11 +1,11 @@
-/* Lógico_1: */
+/* LÃ³gico_1: */
 
 CREATE TABLE Usuario (
     Email varchar(100),
     Senha varchar(100),
     telefone varchar(11),
     Nome varchar(80),
-    cod_usuário int PRIMARY KEY
+    cod_usuario int PRIMARY KEY
 );
 
 CREATE TABLE Cultura (
@@ -21,7 +21,7 @@ CREATE TABLE Solo (
     Media_agua_diaria int
 );
 
-CREATE TABLE Área (
+CREATE TABLE Area (
     Numero_Area serial PRIMARY KEY,
     Tamanho int,
     Data_plantacao date,
@@ -46,8 +46,8 @@ CREATE TABLE Data_fertilizacao (
 );
 
 CREATE TABLE Registro (
-    FK_Área_Numero_Area serial,
-    FK_Usuario_cod_usuário int
+    FK_Area_Numero_Area serial,
+    FK_Usuario_cod_usuario int
 );
 
 CREATE TABLE possui (
@@ -67,29 +67,29 @@ ALTER TABLE Cultura ADD CONSTRAINT FK_Cultura_1
     REFERENCES Periodo_de_colheita (Periodo_de_colheita_PK)
     ON DELETE NO ACTION ON UPDATE NO ACTION;
  
-ALTER TABLE Área ADD CONSTRAINT FK_Área_1
+ALTER TABLE Area ADD CONSTRAINT FK_Area_1
     FOREIGN KEY (FK_Data_fertilizacao_Data_fertilizacao_PK)
     REFERENCES Data_fertilizacao (Data_fertilizacao_PK)
     ON DELETE NO ACTION ON UPDATE NO ACTION;
  
-ALTER TABLE Área ADD CONSTRAINT FK_Área_2
+ALTER TABLE Area ADD CONSTRAINT FK_Area_2
     FOREIGN KEY (FK_Solo_Cod_Solo)
     REFERENCES Solo (Cod_Solo)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE Área ADD CONSTRAINT FK_Área_3
+ALTER TABLE Area ADD CONSTRAINT FK_Area_3
     FOREIGN KEY (FK_Cultura_Cod_Plant)
     REFERENCES Cultura (Cod_Plant)
     ON DELETE SET NULL ON UPDATE CASCADE;
  
 ALTER TABLE Registro ADD CONSTRAINT FK_Registro_0
-    FOREIGN KEY (FK_Área_Numero_Area)
-    REFERENCES Área (Numero_Area)
+    FOREIGN KEY (FK_Area_Numero_Area)
+    REFERENCES Area (Numero_Area)
     ON DELETE SET NULL ON UPDATE CASCADE;
  
 ALTER TABLE Registro ADD CONSTRAINT FK_Registro_1
-    FOREIGN KEY (FK_Usuario_cod_usuário)
-    REFERENCES Usuario (cod_usuário)
+    FOREIGN KEY (FK_Usuario_cod_usuario)
+    REFERENCES Usuario (cod_usuario)
     ON DELETE SET NULL ON UPDATE CASCADE;
  
 ALTER TABLE possui ADD CONSTRAINT FK_possui_0
