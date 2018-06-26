@@ -11,7 +11,7 @@ CREATE TABLE Usuario (
 CREATE TABLE Cultura (
     Cod_Plant int PRIMARY KEY,
     Nome varchar(100),
-    FK_Periodo_de_colheita_Periodo_de_colheita_PK date,
+    FK_Periodo_de_colheita_cod_pr_colh__PK int,
     Media_agua_diaria int
 );
 
@@ -25,7 +25,7 @@ CREATE TABLE Area (
     Numero_Area serial PRIMARY KEY,
     Tamanho int,
     Data_plantacao date,
-    FK_Data_fertilizacao_Data_fertilizacao_PK date,
+    FK_Data_fertilizacao_cod_dt_fert_PK int,
     FK_Solo_Cod_Solo int,
     FK_Cultura_Cod_Plant int
 );
@@ -36,18 +36,18 @@ CREATE TABLE nutrientes (
 );
 
 CREATE TABLE Periodo_de_colheita (
-    Periodo_de_colheita_PK date NOT NULL PRIMARY KEY,
+    cod_pr_colh_PK int NOT NULL PRIMARY KEY,
     Periodo_de_colheita date
 );
 
 CREATE TABLE Data_fertilizacao (
-    Data_fertilizacao_PK date NOT NULL PRIMARY KEY,
-    Data_fertilizacao date
+    cod_dt_fert_PK int NOT NULL PRIMARY KEY,
+    Data date
 );
 
 CREATE TABLE Registro (
     FK_Area_Numero_Area serial,
-    FK_Usuario_cod_usuario int
+    FK_Usuario_cod_usuário int
 );
 
 CREATE TABLE possui (
@@ -63,13 +63,13 @@ CREATE TABLE necessita (
 );
  
 ALTER TABLE Cultura ADD CONSTRAINT FK_Cultura_1
-    FOREIGN KEY (FK_Periodo_de_colheita_Periodo_de_colheita_PK)
-    REFERENCES Periodo_de_colheita (Periodo_de_colheita_PK)
+    FOREIGN KEY (FK_Periodo_de_colheita_cod_pr_colh__PK)
+    REFERENCES Periodo_de_colheita (cod_pr_colh_PK)
     ON DELETE NO ACTION ON UPDATE NO ACTION;
  
 ALTER TABLE Area ADD CONSTRAINT FK_Area_1
-    FOREIGN KEY (FK_Data_fertilizacao_Data_fertilizacao_PK)
-    REFERENCES Data_fertilizacao (Data_fertilizacao_PK)
+    FOREIGN KEY (FK_Data_fertilizacao_cod_dt_fert_PK)
+    REFERENCES Data_fertilizacao (cod_dt_fert_PK)
     ON DELETE NO ACTION ON UPDATE NO ACTION;
  
 ALTER TABLE Area ADD CONSTRAINT FK_Area_2
