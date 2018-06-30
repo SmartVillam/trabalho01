@@ -43,13 +43,16 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-        Relatórios referentes a área de plantação no geral. Sobre o solo da área e sobre a cultura nela plantada.
-    b) Crie uma lista com os 10 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-        Relatório sobre a necessidade de água do solo;
-        Relatório contendo 
-        Relatório sobre a diferença entre os nutrientes necessários para a cultura e os nutrientes que o solo possui;
-        
+    a) O sistema proposto poderá fornecer quais tipos de relatórios e informações?
+    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto
+    
+  O sistema SmartVillam envia os seguintes tipos de relatório de acordo com a demanda do usuário:
+      -Relatório contendo as principais informações do usuário: Nome, e-mail, telefone e código;
+      -Relatório contendo todas as áreas cadastradas pelo usuário;
+      -Relatório contendo todas as informações básicas de uma certa área;
+      -Relatório contendo as informações da cultura de uma área;
+      -Relatório contendo as informações do solo de uma área;
+      -Relatório contendo a diferença de nutrientes solo-cultura;
         
         
 >## Marco de Entrega 01 em: (24/03/2018)<br>
