@@ -40,7 +40,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     e deve ser criada antes do modelo conceitual
     c) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
-    
+    ![Arquivo PDF da tabela de dados feita para o Projeto Smart Villam](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/Tabela_de_dados_SmartVillam.xlsx)
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informações?
