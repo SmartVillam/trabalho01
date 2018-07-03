@@ -87,6 +87,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
     pode possuir para cada departamento mais de uma localização... 
     b) justifique!
+    No sistema em geral, preferimos direcionar o foco das plantações, que antes eram fazendas e grandes plantações, para estufas com áreas de monocultura definidas pelo usuário, o que nos deu uma direção e um objetivo mais claros para trabalharmos;
+    
+    Nos campos de medidas (quantidades e tamanhos) por hora, optamos por utilizar o formato inteiro, para facilitar a manipulação dos dados.
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
     [objeto]: [descrição do objeto]
