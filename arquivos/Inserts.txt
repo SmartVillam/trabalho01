@@ -106,3 +106,5 @@ values (11111, 101, 1.7),
 (88888, 606, 1.4),
 (99999, 303, 1.2),
 (11112, 606, 1.9);
+
+insert into solo (nome, cod_solo, media_agua_diaria) values ('Argiloso',1,2),('Pouco argiloso',2,1.7),('Muito argiloso',3,2.5),('Arenoso',4,1.2),('Pouco arenoso',5,1.5),('Muito arenoso',6,1),('Humoso',7,2.5),('Pouco humoso',8,2.3),('Muito humoso',9,2.7),('Calcário',10,1)
