@@ -1,4 +1,3 @@
-Registro 
 insert into registro 
 values (1,2017001), 
 (2, 2017002), 
