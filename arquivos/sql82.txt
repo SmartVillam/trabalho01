@@ -1,0 +1,181 @@
+CREATE TABLE Usuario (
+    Email varchar(100),
+    Senha varchar(100),
+    telefone varchar(11),
+    Nome varchar(80),
+    cod_usuario int PRIMARY KEY
+);
+
+CREATE TABLE Cultura (
+    Cod_Plant int PRIMARY KEY,
+    Nome varchar(100),
+    FK_Periodo_de_colheita_cod_pr_colh__PK int,
+    Media_agua_diaria int
+);
+
+CREATE TABLE Solo (
+    Cod_Solo int PRIMARY KEY,
+    Nome varchar(100),
+    Media_agua_diaria int
+);
+
+CREATE TABLE Area (
+    Numero_Area serial PRIMARY KEY,
+    Tamanho int,
+    Data_plantacao date,
+    FK_Data_fertilizacao_cod_dt_fert_PK int,
+    FK_Solo_Cod_Solo int,
+    FK_Cultura_Cod_Plant int
+);
+
+CREATE TABLE nutrientes (
+    Cod_nutri int PRIMARY KEY,
+    nome varchar(100)
+);
+
+CREATE TABLE Periodo_de_colheita (
+    cod_pr_colh_PK int NOT NULL PRIMARY KEY,
+    Periodo_de_colheita date
+);
+
+CREATE TABLE Data_fertilizacao (
+    cod_dt_fert_PK int NOT NULL PRIMARY KEY,
+    Data date
+);
+
+CREATE TABLE Registro (
+    FK_Area_Numero_Area serial,
+    FK_Usuario_cod_usuário int
+);
+
+CREATE TABLE possui (
+    FK_Solo_Cod_Solo int,
+    FK_nutrientes_Cod_nutri int,
+    quantidade_kg_por_ha int
+);
+
+CREATE TABLE necessita (
+    FK_Cultura_Cod_Plant int,
+    FK_nutrientes_Cod_nutri int,
+    quantidade_kg_por_ha int
+);
+
+insert into registro 
+values (1,2017001), 
+(2, 2017002), 
+(3, 2017003), 
+(4, 2018001), 
+(5, 2018002), 
+(6, 2018003), 
+(7, 2018004), 
+(8, 2018005), 
+(9, 2018006),
+(10, 2018007);
+
+insert into usuario (nome, senha, cod_usuario, email, telefone)
+values ('Leonardo', '1234a', 2017001, 'leorfb3@gmail.com', '997921122'),
+('Rafael Rodrigues', 'R4f1nh4', 2017002, 'xemrafinha@gmail.com', '999223553'), 
+('Rodrigo', '4dm1n', 2017003, 'rod.oliveira@hotmail.com', '991682155'), 
+('Beatriz', '01dez1997', 2018001, 'BarrosBeatriz@gmail.com', '9601124391'),
+('Antônio', 'S3nh4', 2018002, 'totonio@outlook.com', '996457280'),
+('Diego', 'St4rwarS', 2018003, 'dieginho2001@gmail.com', '940634389'),
+('Daniel', 'abc123', 2018004, 'dani@hotmail.com', '924534047'),
+('Samuel', 'qwerty3', 2018005, 'samuel_fernandes@hotmail.com', '970912266'),
+('Larissa', '12345abc', 2018006, 'LarissaCavalcantiRocha@hotmail.com', '999225676'),
+('Fábio', '1q2w3e4r', 2018007, 'FabioRL@gmail.com', '949487191');
+
+insert into area 
+values (1, 1.5, '01/01/2018', 111, 1, 22222),
+(2, 0.2, '11/01/2018', 222, 7, 44444),
+(3, 0.7, '23/01/2018', 333, 9, 55555),
+(4, 1, '04/02/2018', 444, 5, 77777),
+(5, 3, '07/02/2018', 555, 2, 33333),
+(6, 1.9, '17/02/2018', 666, 6, 99999),
+(7., 1.9, '26/02/2018', 777, 5, 11112),
+(8, 10, '08/03/2018', 888, 9, 66666),
+(9, 2.6, '18/03/2018', 999, 4, 33333),
+(10, 3.14, '31/03/2018', 112, 3, 88888);
+
+insert into cultura (nome, cod_plant, fk_periodo_de_colheita_cod_pr_colh__pk, media_agua_diaria)
+values ('Batata', 11111, 10004, 2),
+('Batata doce', 22222, 10010, 2.5),
+('Rabanete', 33333, 10008, 1.7),
+('Beterraba', 44444, 10006, 1.3),
+('Milho', 55555, 10005, 2),
+('Café', 66666, 10002, 3),
+('Soja', 77777, 10007, 1.2),
+('Alface', 88888, 10001, 2.3),
+('Tomate', 99999, 10009, 2.7),
+('Arroz', 11112, 10003, 1.2);
+
+insert into nutrientes (nome, cod_nutri) 
+values ('Ferro', 101), 
+('Cálcio', 202), 
+('Potássio', 303), 
+('Fósforo', 404), 
+('Zinco', 505), 
+('Nitrogênio', 606), 
+('Magnésio', 707), 
+('Manganês', 808), 
+('Boro', 909), 
+('Cobre', 102);
+
+insert into data_fertilizacao 
+values (111,'02-01-2018'),
+(222, '15-01-2018'),
+(333, '20-01-2018'),
+(444, '04-02-2018'),
+(555, '06-02-2018'), 
+(666, '20-02-2018'),
+(777, '28-02-2018'),
+(888, '08-03-2018'),
+(999, '21-03-2018'),
+(112, '02-04-2018');
+
+insert into periodo_de_colheita 
+values (10001,'01-12-2018'),
+(10002, '30-06-2018'),
+(10003, '15-02-2018'),
+(10004, '01-07-2018'),
+(10005, '31-12-2018'),
+(10006, '01-10-2018'),
+(10007, '15-09-2018'),
+(10008, '01-04-2018'),
+(10009, '30-04-2018'),
+(10010, '15-05-2018');
+
+insert into possui 
+values (1, 101, 2),
+(2, 202, 1.7),
+(3, 303, 1.5),
+(4, 404, 3),
+(5, 505, 1.2),
+(6, 606, 1.3),
+(7, 707, 2),
+(8, 808, 3),
+(9, 909, 1.2),
+(10, 102, 4);
+
+insert into necessita 
+values (11111, 101, 1.7),
+(22222, 909, 1.6),
+(33333, 808, 1.9),
+(44444, 303, 1.5),
+(55555, 101, 2),
+(66666, 303, 1.2),
+(77777, 404, 1.8),
+(88888, 606, 1.4),
+(99999, 303, 1.2),
+(11112, 606, 1.9);
+
+insert into solo (nome, cod_solo, media_agua_diaria) 
+values ('Argiloso', 1, 2),
+('Pouco argiloso', 2, 1.7),
+('Muito argiloso', 3, 2.5),
+('Arenoso', 4, 1.2),
+('Pouco arenoso', 5, 1.5),
+('Muito arenoso', 6, 1),
+('Humoso', 7, 2.5),
+('Pouco humoso', 8, 2.3),
+('Muito humoso', 9, 2.7),
+('Calcário', 10, 1);
