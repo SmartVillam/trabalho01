@@ -118,7 +118,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
         b) formato .SQL
-![Inserção de Dados](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/topico_8.1.txt "Inserção de Dados")
+![Inserção de Dados](https://raw.githubusercontent.com/SmartVillam/trabalho01/blob/master/arquivos/topico_8.1.txt "Inserção de Dados")
 
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
@@ -127,7 +127,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
-![Criação de tabelas + Inserção de Dados](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/topico_8.2.txt "Criação de Tabelas + Inserção de Dados")
+![Criação de tabelas + Inserção de Dados](https://raw.githubusercontent.com/SmartVillam/trabalho01/blob/master/arquivos/topico_8.2.txt "Criação de Tabelas + Inserção de Dados")
 
         
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
@@ -136,7 +136,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
-![Criação e  exclusão de tabelas + Inserção de Dados](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/topico%208.3.txt "Criação e Exclusão de tabelas + Inserção de Dados")
+![Criação e  exclusão de tabelas + Inserção de Dados](https://raw.githubusercontent.com/SmartVillam/trabalho01/blob/master/arquivos/topico%208.3.txt "Criação e Exclusão de tabelas + Inserção de Dados")
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
