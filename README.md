@@ -118,7 +118,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
         b) formato .SQL
-![Inserção de Dados](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/topico%208.3.txt "Inserção de Dados")
+![Inserção de Dados](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/topico_8.1.txt "Inserção de Dados")
 
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
