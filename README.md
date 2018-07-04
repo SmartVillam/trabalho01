@@ -136,7 +136,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
-![Criação e  exclusão de tabelas + Inserção de Dados](https://raw.githubusercontent.com/SmartVillam/trabalho01/arquivos/topico 8.3.txt "Criação e Exclusão de tabelas + Inserção de Dados")
+![Criação e  exclusão de tabelas + Inserção de Dados](https://raw.githubusercontent.com/SmartVillam/trabalho01/arquivos/topico_8.3.txt "Criação e Exclusão de tabelas + Inserção de Dados")
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
