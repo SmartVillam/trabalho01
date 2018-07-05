@@ -241,6 +241,35 @@ SELECT nome, cod_solo, media_agua_diaria FROM solo;
 
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+
+select nome,telefone from usuario
+where telefone like '99%';
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta1.png?raw=true "Title")
+
+
+select nome, fk_periodo_de_colheita_cod_pr_colh__pk, media_agua_diaria FROM cultura
+where nome like '%o%';
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta2.png?raw=true "Title")
+
+
+select nome, media_agua_diaria FROM solo
+where media_agua_diaria > 2;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta3.png?raw=true "Title")
+
+
+select nome,cod_usuario as codigo, email, telefone from usuario
+where cod_usuario < 2018000;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta4.png?raw=true "Title")
+
+
+
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
