@@ -206,7 +206,7 @@ SELECT * FROM registro;
 
 SELECT nome, cod_plant, fk_periodo_de_colheita_cod_pr_colh__pk, media_agua_diaria FROM cultura;
 
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/tabela_usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/tabela_cultura.png?raw=true "Title")
 
 
 SELECT nome, cod_nutri FROM nutrientes;
