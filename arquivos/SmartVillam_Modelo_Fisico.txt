@@ -1,5 +1,3 @@
-/* Lógico_1: */
-
 CREATE TABLE Usuario (
     Email varchar(100),
     Senha varchar(100),
@@ -61,53 +59,3 @@ CREATE TABLE necessita (
     FK_nutrientes_Cod_nutri int,
     quantidade_kg_por_ha int
 );
- 
-ALTER TABLE Cultura ADD CONSTRAINT FK_Cultura_1
-    FOREIGN KEY (FK_Periodo_de_colheita_cod_pr_colh__PK)
-    REFERENCES Periodo_de_colheita (cod_pr_colh_PK)
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
- 
-ALTER TABLE Area ADD CONSTRAINT FK_Area_1
-    FOREIGN KEY (FK_Data_fertilizacao_cod_dt_fert_PK)
-    REFERENCES Data_fertilizacao (cod_dt_fert_PK)
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
- 
-ALTER TABLE Area ADD CONSTRAINT FK_Area_2
-    FOREIGN KEY (FK_Solo_Cod_Solo)
-    REFERENCES Solo (Cod_Solo)
-    ON DELETE CASCADE ON UPDATE CASCADE;
- 
-ALTER TABLE Area ADD CONSTRAINT FK_Area_3
-    FOREIGN KEY (FK_Cultura_Cod_Plant)
-    REFERENCES Cultura (Cod_Plant)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE Registro ADD CONSTRAINT FK_Registro_0
-    FOREIGN KEY (FK_Area_Numero_Area)
-    REFERENCES Area (Numero_Area)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE Registro ADD CONSTRAINT FK_Registro_1
-    FOREIGN KEY (FK_Usuario_cod_usuario)
-    REFERENCES Usuario (cod_usuario)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE possui ADD CONSTRAINT FK_possui_0
-    FOREIGN KEY (FK_Solo_Cod_Solo)
-    REFERENCES Solo (Cod_Solo)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE possui ADD CONSTRAINT FK_possui_1
-    FOREIGN KEY (FK_nutrientes_Cod_nutri)
-    REFERENCES nutrientes (Cod_nutri)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE necessita ADD CONSTRAINT FK_necessita_0
-    FOREIGN KEY (FK_Cultura_Cod_Plant)
-    REFERENCES Cultura (Cod_Plant)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE necessita ADD CONSTRAINT FK_necessita_1
-    FOREIGN KEY (FK_nutrientes_Cod_nutri)
-    REFERENCES nutrientes (Cod_nutri)
-    ON DELETE SET NULL ON UPDATE CASCADE;
