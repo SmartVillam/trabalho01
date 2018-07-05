@@ -338,6 +338,48 @@ where nome like '%o%';
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
+delete from solo 
+where nome = 'Argiloso';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/delete1.png?raw=true "Title")
+
+
+delete from solo 
+where nome = 'Pouco argiloso';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/delete2.png?raw=true "Title")
+
+
+delete from solo 
+where nome = 'Muito argiloso';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/delete3.png?raw=true "Title")
+
+
+delete from solo 
+where nome = 'Muito humoso';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/delete4.png?raw=true "Title")
+
+
+delete from solo 
+where nome = 'Pouco humoso';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/delete5.png?raw=true "Title")
+
+
+delete from solo 
+where nome = 'Humoso';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/delete6.png?raw=true "Title")
+
+
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
