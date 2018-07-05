@@ -191,42 +191,42 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 SELECT nome, senha, cod_usuario, email, telefone FROM usuario;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_usuario.png?raw=true "Title")
 
 SELECT * FROM area_2;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_area_2.png?raw=true "Title")
 
 
 SELECT * FROM registro;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_registro.png?raw=true "Title")
 
 
 SELECT nome, cod_plant, fk_periodo_de_colheita_cod_pr_colh__pk, media_agua_diaria FROM cultura;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_cultura.png?raw=true "Title")
 
 
 SELECT nome, cod_nutri FROM nutrientes;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_nutrientes.png?raw=true "Title")
 
 
 SELECT * FROM data_fertilizacao;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_data.png?raw=true "Title")
 
 
 SELECT * FROM periodo_de_colheita;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_periodo_colheita.png?raw=true "Title")
 
 
 SELECT * FROM possui;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_possui.png?raw=true "Title")
 
 
 SELECT * FROM necessita;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_necessita.png?raw=true "Title")
 
 
 SELECT nome, cod_solo, media_agua_diaria FROM solo;
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela-usuario.png?raw=true "Title")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Tabela_solo.png?raw=true "Title")
 
 
 
