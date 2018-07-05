@@ -242,18 +242,6 @@ SELECT nome, cod_solo, media_agua_diaria FROM solo;
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 
-select nome,telefone from usuario
-where telefone like '99%';
-
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta1.png?raw=true "Title")
-
-
-select nome, fk_periodo_de_colheita_cod_pr_colh__pk, media_agua_diaria FROM cultura
-where nome like '%o%';
-
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta2.png?raw=true "Title")
-
-
 select nome, media_agua_diaria FROM solo
 where media_agua_diaria > 2;
 
@@ -274,12 +262,27 @@ where cod_usuario < 2018000;
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    
+    
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
-
-
     
+    
+select nome,telefone from usuario
+where telefone like '99%';
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta1.png?raw=true "Title")
+
+
+select nome, fk_periodo_de_colheita_cod_pr_colh__pk, media_agua_diaria FROM cultura
+where nome like '%o%';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta2.png?raw=true "Title")
+
+
+
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
 
