@@ -256,6 +256,20 @@ where cod_usuario < 2018000;
 ![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta4.png?raw=true "Title")
 
 
+select nome,senha from usuario
+where nome = 'Leonardo';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta5.png?raw=true "Title")
+
+
+select  nome, cod_nutri from nutrientes
+where  cod_nutri > 600;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta6.png?raw=true "Title")
+
+
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
