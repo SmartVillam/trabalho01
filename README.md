@@ -277,7 +277,37 @@ where  cod_nutri > 600;
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
     
-    
+
+
+select nome, media_agua_diaria FROM solo
+where not media_agua_diaria > 2;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta10.png?raw=true "Title")
+
+
+select nome,cod_usuario as codigo, email, telefone from usuario
+where  cod_usuario > 2018000 and cod_usuario < 2018006;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta9.png?raw=true "Title")
+
+
+select  nome, cod_nutri from nutrientes
+where  cod_nutri < 300 or cod_nutri = 2;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta7.png?raw=true "Title")
+
+
+select nome,fk_periodo_de_colheita_cod_pr_colh__pk as periodo_de_colheita, media_agua_diaria from cultura
+where cod_plant < 66666 and media_agua_diaria = 2;
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta8.png?raw=true "Title")
+
+
+
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
