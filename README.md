@@ -280,21 +280,21 @@ where  cod_nutri > 600;
 
 
 select nome, media_agua_diaria FROM solo
-where not media_agua_diaria > 2;
+where not media_agua_diaria * 2 > 4;
 
 
 ![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta10.png?raw=true "Title")
 
 
-select nome,cod_usuario as codigo, email, telefone from usuario
-where  cod_usuario > 2018000 and cod_usuario < 2018006;
+select nome,fk_periodo_de_colheita_cod_pr_colh__pk as periodo_de_colheita, media_agua_diaria from cultura
+where cod_plant - 1< 55555 and media_agua_diaria = 2;
 
 
 ![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta9.png?raw=true "Title")
 
 
-select  nome, cod_nutri from nutrientes
-where  cod_nutri < 300 or cod_nutri = 2;
+select  nome, cod_nutri as codigo_nutrientes from nutrientes
+where  cod_nutri * 2 < 500 or cod_nutri = 505;
 
 
 ![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta7.png?raw=true "Title")
@@ -305,6 +305,15 @@ where cod_plant < 66666 and media_agua_diaria = 2;
 
 
 ![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta8.png?raw=true "Title")
+
+
+select nome, senha from usuario
+where not nome = 'Leonardo' and not nome = 'Rafael Rodrigues';
+
+
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/consulta11.png?raw=true "Title")
+
+
 
 
 
