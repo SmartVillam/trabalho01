@@ -9,7 +9,7 @@ CREATE TABLE Usuario (
 CREATE TABLE Cultura (
     Cod_Plant int PRIMARY KEY,
     Nome varchar(100),
-    FK_Periodo_de_colheita_cod_pr_colh__PK int,
+    FK_Periodo_de_colheita_cod_pr_colh__PK date,
     Media_agua_diaria int
 );
 
