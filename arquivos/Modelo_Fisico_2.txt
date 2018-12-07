@@ -1,0 +1,190 @@
+CREATE TABLE usuario (
+    senha VARCHAR,
+    FK_contato_contato_PK VARCHAR,
+    nome VARCHAR,
+    cod_usuario INT PRIMARY KEY,
+    FK_tipo_tipo_PK INT,
+    FK_endereco_cod_endereco INT
+);
+
+CREATE TABLE cultura (
+    cod_plant INT PRIMARY KEY,
+    nome_cult VARCHAR,
+    media_agua INT,
+    tempo_desenvolvimento DATE,
+    FK_tipo_cultura_cod_tipo INT
+);
+
+CREATE TABLE solo (
+    cod_Solo INT PRIMARY KEY,
+    nome VARCHAR,
+    media_agua INT,
+    FK_data_fertilizacao_data_fertilizacao_PK DATE
+);
+
+CREATE TABLE area (
+    numero_da_area INT PRIMARY KEY,
+    tamanho INT,
+    FK_usuario_cod_usuario INT,
+    FK_solo_cod_Solo INT,
+    FK_cultura_cod_plant INT,
+    data_alocacao DATE
+);
+
+CREATE TABLE nutrientes (
+    cod_nutri INT PRIMARY KEY,
+    nome_nutri VARCHAR
+);
+
+CREATE TABLE tipo_cultura (
+    descr VARCHAR,
+    cod_tipo INT PRIMARY KEY
+);
+
+CREATE TABLE endereco (
+    CEP VARCHAR,
+    numero INT,
+    cod_endereco INT PRIMARY KEY,
+    FK_bairro_cod_bair INT,
+    FK_logradouro_cod_log INT
+);
+
+CREATE TABLE estado (
+    cod_est INT PRIMARY KEY,
+    descr VARCHAR,
+    FK_pais_cod_pais INT
+);
+CREATE TABLE municipio (
+    descr VARCHAR,
+    cod_mun INT PRIMARY KEY,
+    FK_estado_cod_est INT
+);
+
+CREATE TABLE pais (
+    cod_pais INT PRIMARY KEY,
+    descr VARCHAR
+);
+
+CREATE TABLE bairro (
+    descr VARCHAR,
+    cod_bair INT PRIMARY KEY,
+    FK_municipio_cod_mun INT
+);
+
+CREATE TABLE logradouro (
+    descr VARCHAR,
+    cod_log INT PRIMARY KEY
+);	
+
+CREATE TABLE contato (
+    contato_PK VARCHAR NOT NULL PRIMARY KEY,
+    contato VARCHAR
+);
+
+CREATE TABLE tipo (
+    tipo_PK INT NOT NULL PRIMARY KEY,
+    tipo INT
+);
+
+CREATE TABLE data_fertilizacao (
+    data_fertilizacao_PK INT NOT NULL PRIMARY KEY,
+    data_fertilizacao DATE
+);
+
+CREATE TABLE solo_nutri (
+    FK_nutrientes_cod_nutri INT,
+    FK_solo_cod_Solo INT,
+    quantidade_nutri INT,
+    data_nutri DATE
+);
+
+CREATE TABLE cult_nutri (
+    FK_nutrientes_cod_nutri INT,
+    FK_cultura_cod_plant INT,
+    quantidade_nutri INT
+);
+
+ALTER TABLE usuario ADD CONSTRAINT FK_usuario_1
+    FOREIGN KEY (FK_contato_contato_PK)
+    REFERENCES contato (contato_PK)
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+ 
+ALTER TABLE usuario ADD CONSTRAINT FK_usuario_2
+    FOREIGN KEY (FK_tipo_tipo_PK)
+    REFERENCES tipo (tipo_PK)
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+ 
+ALTER TABLE usuario ADD CONSTRAINT FK_usuario_3
+    FOREIGN KEY (FK_endereco_cod_endereco)
+    REFERENCES endereco (cod_endereco)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE cultura ADD CONSTRAINT FK_cultura_1
+    FOREIGN KEY (FK_tipo_cultura_cod_tipo)
+    REFERENCES tipo_cultura (cod_tipo)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE solo ADD CONSTRAINT FK_solo_1
+    FOREIGN KEY (FK_data_fertilizacao_data_fertilizacao_PK)
+    REFERENCES data_fertilizacao (data_fertilizacao_PK)
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+ 
+ALTER TABLE area ADD CONSTRAINT FK_area_1
+    FOREIGN KEY (FK_usuario_cod_usuario)
+    REFERENCES usuario (cod_usuario)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE area ADD CONSTRAINT FK_area_2
+    FOREIGN KEY (FK_solo_cod_Solo)
+    REFERENCES solo (cod_Solo)
+    ON DELETE CASCADE ON UPDATE CASCADE;
+ 
+ALTER TABLE area ADD CONSTRAINT FK_area_3
+    FOREIGN KEY (FK_cultura_cod_plant)
+    REFERENCES cultura (cod_plant)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+ 
+ALTER TABLE endereco ADD CONSTRAINT FK_endereco_1
+    FOREIGN KEY (FK_bairro_cod_bair)
+    REFERENCES bairro (cod_bair)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE endereco ADD CONSTRAINT FK_endereco_2
+    FOREIGN KEY (FK_logradouro_cod_log)
+    REFERENCES logradouro (cod_log)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE estado ADD CONSTRAINT FK_estado_1
+    FOREIGN KEY (FK_pais_cod_pais)
+    REFERENCES pais (cod_pais)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE municipio ADD CONSTRAINT FK_municipio_1
+    FOREIGN KEY (FK_estado_cod_est)
+    REFERENCES estado (cod_est)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE bairro ADD CONSTRAINT FK_bairro_1
+    FOREIGN KEY (FK_municipio_cod_mun)
+    REFERENCES municipio (cod_mun)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE solo_nutri ADD CONSTRAINT FK_solo_nutri_0
+    FOREIGN KEY (FK_nutrientes_cod_nutri)
+    REFERENCES nutrientes (cod_nutri)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE solo_nutri ADD CONSTRAINT FK_solo_nutri_1
+    FOREIGN KEY (FK_solo_cod_Solo)
+    REFERENCES solo (cod_Solo)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+ 
+ALTER TABLE cult_nutri ADD CONSTRAINT FK_cult_nutri_0
+    FOREIGN KEY (FK_nutrientes_cod_nutri)
+    REFERENCES nutrientes (cod_nutri)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE cult_nutri ADD CONSTRAINT FK_cult_nutri_1
+    FOREIGN KEY (FK_cultura_cod_plant)
+    REFERENCES cultura (cod_plant)
+    ON DELETE SET NULL ON UPDATE CASCADE;
