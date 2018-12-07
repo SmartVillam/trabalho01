@@ -70,7 +70,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas    
         
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Conceitual_SmartVillam 4.0.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Conceitual_SmartVillam_4.0.png?raw=true "Modelo Conceitual")
     
    
     
