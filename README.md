@@ -101,20 +101,37 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     USUARIO: Tabela que armazena as informações relativas ao usuario.
     NOME: Campo que armazena o nome de cada usuario da SmartVillam.
     SENHA: Campo que armazena a senha de cada usuario da SmartVillam. 
-    CODIGO_USUARIO: Campo que armazena o codigo de usuario de cada usuario da SmartVillam.
-    TELEFONE: Campo que armazena o telefone de cada usuario da SmartVillam.
+    COD_USUARIO: Campo que armazena o codigo de usuario de cada usuario da SmartVillam.
+    CONTATO: Campo que armazena o contato de cada usuario da SmartVillam.
+    TIPO: Campo que define o tipo de permissão que o usuário vai possuir.
     
-    REGISTRO_AREA: Tabela que armazena as informações relativas ao registro de áreas.
+    
+    
+    REGISTRA_AREA: Tabela que armazena as informações relativas ao registro de áreas.
     NUMERO_DE_AREA: Campo que armazena o numero da área registrada.
-    CODIGO_USUARIO: Campo que armazena o codigo do usuario que registrou a área
+    COD_USUARIO: Campo que armazena o codigo do usuario que registrou a área
     
     AREA: Tabela que armazena as informações relativas à área de cultivo.
-    NUMERO_DE_AREA: Campo que armazena o numero de cada área da SmartVillam.
+    NUMERO_DA_AREA: Campo que armazena o numero de cada área da SmartVillam.
     TAMANHO: Campo que armazena o tamanho de cada área da SmartVillam.
-    DATA_PLANTACAO: Campo que armazena a data em que se deu inicio a prantação em cada área da SmartVillam.
-    CODIGO_DATA_FERTILIZACAO: Campo que armazena o codigo das datas de fertilização de cada área da SmartVillam.
-    CODIGO_SOLO: Campo que armazena o codigo de solo de cada área da SmartVillam.
-    CODIGO_CULTURA: Campo que armazena o codigo de cultura de cada área da SmartVillam.
+    
+    AREA_CULT: Tabela que relaciona as tabelas Área e Cultura.
+    DATA_ALOCACAO: Campo que armazena a data em que a cultura foi plantada na área.
+    COD_PLANT: Campo que armazena o identificador da cultura.
+    NUMERO_DA_AREA: Campo que armazena o identificador da área.
+    
+    
+    AREA_SOLO: Tabela que relaciona as tabelas Área e Solo.
+    COD_SOLO: Campo que armazena o identificador do solo.
+    NUMERO_DA_AREA: Campo que armazena o identificador da área.
+    
+    SOLO: Tabela que armazena as informações relativas ao solo da área.
+    COD_SOLO: Campo que armazena o código do solo.
+    NOME: Campo que armazena o nome/descrição do solo.
+    MEDIA_AGUA
+    
+    DATA_FERTILIZACAO: Campo que armazena as datas em que o solo foi fertilizado.
+    
     
     DATA_FERTILIZACAO: Tabela que armazena as informações relativas à data de fetilização da área.
     CODIGO_DATA_DE_FERTILIZACAO: Campo que armazena o codigo de cada data em que a área foi fertilizada
