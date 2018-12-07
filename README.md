@@ -158,7 +158,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         a) inclusão das instruções de criacão das estruturas DDL 
         (criação de tabelas, alterações, etc..)  
 
-![Modelo Físico](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/SmartVillam_Modelo_Fisico.txt?raw=true "Modelo Físico")
+![Modelo Físico](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/Modelo_Fisico_2.txt?raw=true "Modelo Físico")
 
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
