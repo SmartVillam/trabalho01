@@ -51,15 +51,10 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
       -Quais tipos de cultura se repetem mais em cultura?;
       -Quais nutrientes se repetem mais vezes em cultura?;
       -Quantas áreas foram registradas em cada país?;
+      -Quantas áreas foram registradas em cada municipio?;
+      -Quanto de cada tipo de cultura foram plantados em cada municipio?;
       -Qual a soma total do tamanho das areas registradas em um país?;
-      -
-      -Relatório contendo todas as áreas cadastradas pelo usuário;
-      -Relatório contendo todas as informações básicas de uma certa área;
-      -Relatório contendo as informações da cultura de uma área;
-      -Relatório contendo as informações do solo de uma área;
-     
-        
-        
+                     
 >## Marco de Entrega 01 em: (24/03/2018)<br>
 
 ### 5.MODELO CONCEITUAL<br>
@@ -88,14 +83,18 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
     
-    EXEMPLO:
+   
     a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
+    pode possuir para cada departamento mais de uma localização...
     b) justifique!
-    No sistema em geral, preferimos direcionar o foco das plantações, que antes eram fazendas e grandes plantações, para estufas com áreas de monocultura definidas pelo usuário, o que nos deu uma direção e um objetivo mais claros para trabalharmos;
     
-    Nos campos de medidas (quantidades e tamanhos) por hora, optamos por utilizar o formato inteiro, para facilitar a manipulação dos dados.
-
+    
+   
+    No sistema em geral: Preferimos direcionar o foco das plantações, que antes eram fazendas e grandes plantações, para estufas com  áreas de monocultura definidas pelo usuário, o que nos deu uma direção e um objetivo mais claros para trabalharmos;
+    Campo endereço: Optamos deixar deste modo para o caso de dois ou mais usuários possuirem o mesmo endereço;
+    Campos de medida (quantidades e tamanhos): Por hora, optamos por utilizar o formato inteiro, para facilitar a manipulação dos dados;
+    Campo data fertilização: Optamos por uma cardinalidade minima '0' pela possibilidade de uma planta sem nenhuma fertilização feita; 
+    
 #### 5.3 DESCRIÇÃO DOS DADOS 
     [objeto]: [descrição do objeto]
     
