@@ -47,12 +47,17 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto
     
   O sistema SmartVillam envia os seguintes tipos de relatório de acordo com a demanda do usuário:
-      -Relatório contendo as principais informações do usuário: Nome, e-mail, telefone e código;
+      -Quais as culturas que necessitam de mais nutrientes?;
+      -Quais tipos de cultura se repetem mais em cultura?;
+      -Quais nutrientes se repetem mais vezes em cultura?;
+      -Quantas áreas foram registradas em cada país?;
+      -Qual a soma total do tamanho das areas registradas em um país?;
+      -
       -Relatório contendo todas as áreas cadastradas pelo usuário;
       -Relatório contendo todas as informações básicas de uma certa área;
       -Relatório contendo as informações da cultura de uma área;
       -Relatório contendo as informações do solo de uma área;
-      -Relatório contendo a diferença de nutrientes solo-cultura;
+     
         
         
 >## Marco de Entrega 01 em: (24/03/2018)<br>
@@ -77,8 +82,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Laira Rodrigues, Maria Eduarda Braga]
+    [Grupo02]: [Carlos Breno Norato, Lucio Ribeiro]
 ## Marco de Entrega 01 em: (20/04/2018)<br>
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
