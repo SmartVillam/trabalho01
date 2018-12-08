@@ -105,9 +105,32 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     CONTATO: Campo que armazena o contato de cada usuario da SmartVillam.
     TIPO: Campo que define o tipo de permissão que o usuário vai possuir.
     
+    ENDERECO: Tabela que armazena as informações relativas ao endereço do usuário.
+    NUMERO: Campo que armazena o numero do endereço do usuário (numero da casa, apartamento, etc).
+    CEP: Campo que armazena o CEP do endereço do usuário.
+    COD_ENDERECO: Campo que armazena o código identificador do endereço do usuário.
     
+    LOGRADOURO: Tabela que armazena as informações referentes ao Logradouro de um endereço.
+    COD_LOG: Campo que armazena o código identificador do logradouro.
+    DESCR: Campo que armazena a descrição do logradouro.
     
-    REGISTRA_AREA: Tabela que armazena as informações relativas ao registro de áreas.
+    BAIRRO: Tabela que armazena as informações referentes ao Bairro de um endereço.
+    COD_BAIR: Campo que armazena o código identificador do bairro.
+    DESCR: Campo que armazena a descrição do bairro.
+    
+    MUNICIPIO: Tabela que armazena as informações referentes ao Município de um endereço.
+    COD_MUN: Campo que armazena o código identificador do município.
+    DESCR: Campo que armazena a descrição do município.
+    
+    ESTADO: Tabela que armazena as informações referentes ao Estado de um endereço.
+    COD_EST: Campo que armazena o código identificador do estado.
+    DESCR: Campo que armazena a descrição do estado.
+    
+    PAIS: Tabela que armazena as informações referentes ao País de um endereço.
+    COD_PAIS: Campo que armazena o código identificador do país.
+    DESCR: Campo que armazena a descrição do país.
+    
+    REGISTRA: Tabela que armazena as informações relativas ao registro de áreas.
     NUMERO_DE_AREA: Campo que armazena o numero da área registrada.
     COD_USUARIO: Campo que armazena o codigo do usuario que registrou a área
     
@@ -128,43 +151,34 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     SOLO: Tabela que armazena as informações relativas ao solo da área.
     COD_SOLO: Campo que armazena o código do solo.
     NOME: Campo que armazena o nome/descrição do solo.
-    MEDIA_AGUA
-    
+    MEDIA_AGUA: Campo que armazena a média de água necessária para o solo.
     DATA_FERTILIZACAO: Campo que armazena as datas em que o solo foi fertilizado.
     
-    
-    DATA_FERTILIZACAO: Tabela que armazena as informações relativas à data de fetilização da área.
-    CODIGO_DATA_DE_FERTILIZACAO: Campo que armazena o codigo de cada data em que a área foi fertilizada
-    DATA: Campo que armazena a data em que cada área foi fertilzada
-    
     CULTURA: Tabela que armazena as informações relativas à cultura plantada.
-    NOME: Campo que armazena o nome de cada cultura da SmartVillam.
-    CODIGO_CULTURA: Campo que armazena o codigo de cada cultura da SmartVillam.
-    CODIGO_PERIODO_DE_COLHEITA: Campo que armazena o codigo do periodo de colheita de cada cultura da SmartVillam.
-    MEDIA_DE_AGUA_DIARIA: Campo que armazena a media de àgua diara necesasria para cada cultura da SmartVillam.
+    NOME_CULT: Campo que armazena o nome da cultura.
+    COD_PLANT: Campo que armazena o codigo da cultura.
+    TEMPO_DESENVOLVIMENTO: Campo que armazena o tempo de desenvolvimento daquela cultura.
+    MEDIA_AGUA: Campo que armazena a média de água necessária para a planta.
     
-    PERIODO_DE_COLHEITA: Tabela que armazena as informações relativas ao periodo de colheita da cultura.
-    CODIGO_DE_PERIODO: Campo que armazena o codigo de cada periodo de colheita.
-    PERIODO_DA_COLHEITA: Campo que armazena o periodo de cada colheita.
+    TIPO_CULTURA: Tabela que armazena os tipos de grupos aos quais as plantas fazem parte.
+    DESC: Nome da família/grupo da cultura.
+    COD_TIPO: Código do grupo da cultura.
+   
     
-    NECESSIDADE_NUTRIENTES: Tabela que armazena as informações relativas à necessidade de nutrientes da cultura.
+    CULT_NUTRI: Tabela que armazena as informações relativas à necessidade de nutrientes da cultura.
     CODIGO_CULTURA: Campo que armazena o codigo de uma cultura que necessita de um nutriente.
     CODIGO_NUTRIENTES: Campo que armazena o codigo de um nutriente que é necessario para uma cultura.
-    QUANTIDADE: Campo que armazena a quantidade necessaria de um nutriente para uma cultura.
-    
-    SOLO: Tabela que armazena as informações relativas ao solo de cultivo.
-    NOME: Campo que armazena o nome para cada solo da SmartVillam.
-    CODIGO_SOLO: Campo que armazena o codigo de cada solo da SmartVillam.
-    MEDIA_AGUA_DIARIA: Campo que armazena a quantidade de água posta diariamente em cada solo da SmartVillam.
-    
-    POSSE_NUTRIENTES: Tabela que armazena as informações relativas à posse de nutriente do solo
+    QUANTIDADE_NUTRI: Campo que armazena a quantidade necessaria de um nutriente para uma cultura.
+   
+    SOLO_NUTRI: Tabela que armazena as informações relativas à posse de nutriente do solo
     CODIGO_SOLO: Campo que armazena o codigo de um solo que possui um nutriente.
     CODIGO_NUTRIENTES: Campo que armazena o codigo de um nutriente presente em um solo.
-    QUANTIDADE: Campo que armazena a quantidade de um nutriente presente em um solo.
+    QUANTIDADE_NUTRI: Campo que armazena a quantidade de um nutriente presente em um solo.
+    DATA_NUTRI: Data em que esses nutrientes foram adicionados ao solo.
     
-    NUTRIENTE: Tabela que armazena as informações relativas ao nutriente.
-    NOME: Campo que armazena o nome de cada nutriente da SmartVillam.
-    CODIGO_NUTRIENTE: Campo que armazena o codigo de cada nutriente da SmartVillam.
+    NUTRIENTES: Tabela que armazena as informações relativas aos nutrientes.
+    NOME_NUTRI: Campo que armazena o nome de cada nutriente da SmartVillam.
+    COD_NUTRI: Campo que armazena o codigo de cada nutriente da SmartVillam.
 
 >## Marco de Entrega 01 em: (12/05/2018)<br>
 ### 6	MODELO LÓGICO<br>
