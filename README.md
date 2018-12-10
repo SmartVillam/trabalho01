@@ -435,6 +435,9 @@ where nome = 'Humoso';
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
+#### RELATÓRIOS SMARTVILLAM<br>
+![Relatórios](https://github.com/SmartVillam/trabalho01/blob/master/arquivos/Relatorios_smartvillam.ipynb?raw=true "Relatórios")
+
 #### 9.11	LISTA DE CODIGOS DAS FUNÇÕES E TRIGGERS<br>
         Detalhamento sobre funcionalidade de cada código.
         a) Objetivo
