@@ -186,7 +186,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
         
-![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Lógico_2.png?raw=true "Modelo Lógico")
+![Alt text](https://github.com/SmartVillam/trabalho01/blob/master/imagens/Lógico_4.png?raw=true "Modelo Lógico")
 
 
 ### 7	MODELO FÍSICO<br>
