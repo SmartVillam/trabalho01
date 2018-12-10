@@ -87,7 +87,7 @@ CREATE TABLE tipo (
 );
 
 CREATE TABLE data_fertilizacao (
-    data_fertilizacao_PK INT NOT NULL PRIMARY KEY,
+    data_fertilizacao_PK DATE NOT NULL PRIMARY KEY,
     data_fertilizacao DATE
 );
 
