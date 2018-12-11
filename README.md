@@ -223,6 +223,10 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+
+### (TÓPICO 9 ATUALIZADO 11/12/2018):
+    https://colab.research.google.com/drive/1vEMBA8fUtfM2mNoa8xUMySF-bcQYh3-P
+    
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 SELECT nome, senha, cod_usuario, email, telefone FROM usuario;
@@ -419,7 +423,6 @@ where nome = 'Humoso';
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-        
 
 ## Marco de Entrega 02 em: (16/06/2018)<br>
 ### ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO SEMESTRAL (Mínimo 6 e Máximo 10)<br>
